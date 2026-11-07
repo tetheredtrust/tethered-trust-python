@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tethered-trust"
+version = "0.1.0"
+description = "Fit, compatibility and recall checks for AI agents before they buy. Client and tool definitions for the Tethered Trust API and MCP server."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Chimes In LLC", email = "support@chimes-in.com" }]
+keywords = ["ai-agents", "mcp", "compatibility", "shopping-agent", "agentic-commerce", "recalls", "x402", "function-calling", "langchain"]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Topic :: Software Development :: Libraries"]
+dependencies = []
+
+[project.optional-dependencies]
+langchain = ["langchain-core>=0.3"]
+
+[project.urls]
+Homepage = "https://tetheredtrust.com/agents"
+Source = "https://github.com/tetheredtrust/tethered-trust-python"
+Pricing = "https://tetheredtrust.com/pricing"
+
+[tool.setuptools]
+packages = ["tethered_trust"]
